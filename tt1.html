@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MoneyHax - Cryptocurrency</title>
+    <style>
+        /* Your background image and styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://www.cryptoryancy.com/wp-content/uploads/2020/12/load-image-2.jpeg');
+            background-size: cover;
+        }
+
+        /* Additional styles for the container if needed */
+        .container {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding: 50px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border-radius: 10px;
+        }
+
+        /* Rest of your styles */
+        .portfolio {
+            margin-top: 50px;
+        }
+        .portfolio h2 {
+            margin-bottom: 20px;
+        }
+        .crypto-list {
+            text-align: left;
+            margin-left: 20px;
+            padding: 20px;
+            background-color: #fff; /* White background for the list */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding a slight shadow */
+            position: relative;
+            z-index: 1; /* Bring the list in front of the background */
+        }
+        .crypto-list li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container" style="background-color: #4EB6C1; color: white;">
+        <h1>Welcome to MoneyHax</h1>
+        <form id="cryptoForm">
+            <label for="cryptoSelect">Select a cryptocurrency:</label>
+            <select id="cryptoSelect">
+                <option value="bitcoin">Bitcoin</option>
+                <option value="ethereum">Ethereum</option>
+                <option value="ripple">Ripple</option>
+                <option value="litecoin">Litecoin</option>
+                <option value="cardano">Cardano</option>
+                <!-- Add more cryptocurrency options as needed -->
+            </select>
+            <button type="button" id="buyButton">Buy Now</button>
+        </form>
+    </div>
+
+    <div class="portfolio">
+        <h2>Portfolio</h2>
+        <ul class="crypto-list">
+            <li><strong>Name:</strong> Bitcoin | <strong>Cost:</strong> $2000</li>
+            <li><strong>Name:</strong> Ethereum | <strong>Cost:</strong> $1500</li>
+            <li><strong>Name:</strong> Ripple | <strong>Cost:</strong> $0.75</li>
+            <li><strong>Name:</strong> Litecoin | <strong>Cost:</strong> $175</li>
+            <li><strong>Name:</strong> Cardano | <strong>Cost:</strong> $1.25</li>
+            <!-- Add more cryptocurrencies and their details as needed -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

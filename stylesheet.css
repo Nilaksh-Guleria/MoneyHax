@@ -1,0 +1,142 @@
+/* Style for the button */
+.tab-btn {
+    background-color: #007bff; /* Default background color */
+    color: #ffffff; /* Default text color */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add transition effect for background color only */
+  }
+  
+  /* Style for the button when hovering over it */
+  .tab-btn:hover {
+    background-color: #0056b3; /* New background color on hover */
+  }
+  
+
+  .rotating-image {
+    animation: rotateImage 8s linear infinite; /* Adjust the duration and timing function as needed */
+    transform-style: preserve-3d;
+  }
+  
+  @keyframes rotateImage {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+
+  
+  .app-banner {
+    position: relative;
+    overflow: hidden;
+    display: inline-block; /* Ensure the container only takes up the size of the image */
+  }
+  
+  .app-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0); /* Transparent white color */
+    transition: background-color 0.3s ease-out, opacity 0.5s ease-out; /* Smooth transition */
+    z-index: 1; /* Ensure pseudo-element is above the image */
+  }
+  
+  .app-banner:hover::before {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white color on hover */
+    opacity: 0; /* Fade out */
+  }
+  
+  .app-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: filter 0.5s ease-out; /* Smooth transition */
+  }
+  
+  .app-banner:hover img {
+    filter: brightness(150%); /* Increase brightness on hover */
+  }
+
+  
+  .span {
+    animation: colorChange 5s infinite; /* Animation name, duration, and iteration count */
+  }
+  
+  @keyframes colorChange {
+    0% { color: blue; } /* Starting color */
+    25% { color: red; } /* Color change at 25% */
+    50% { color: green; } /* Color change at 50% */
+    75% { color: orange; } /* Color change at 75% */
+    100% { color: purple; } /* Final color */
+  }
+
+  
+/* Define the animation */
+@keyframes coolAnimation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Apply the animation to the title */
+.hero-content .hero-title {
+  font-family: Arial, sans-serif;
+  font-size: 5.5rem;
+  text-align: center;
+  animation: coolAnimation 2s ease-in-out infinite; /* Animation name, duration, timing function, and iteration count */
+}
+
+/* Define the typing animation */
+@keyframes typingAnimation {
+  from { width: 0; }
+}
+
+
+
+/* Define the scaling animation */
+@keyframes scaleAnimation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Apply the scaling animation to the title */
+.hero-title {
+  font-family: Arial, sans-serif;
+  font-size: 60rem; /* Increased font size */
+  text-align: center;
+  animation: scaleAnimation 2s ease-in-out infinite; /* Animation name, duration, timing function, and iteration count */
+}
+
+/* Define the typing animation */
+.typing-title::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  
+}
+
+/* Define the typing animation keyframes */
+@keyframes typingAnimation {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+
+
+
+
+
+  
